@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+ <body>
+     <div class="navbar">
+         <div class="container">
+             <a class="logo" href="#">Must<span>Remember</span></a>
+            
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+             <nav>
+                 <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                 <ul class="primary-nav">
+                     <li class="current"><a href="#">Home</a></li>
+                     <li><a href="#">Feature</a></li>
+                     <li><a href="#">Pricing</a></li>
+                 </ul>
+
+                 <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="try-premium-cta"><a href="#">Try Premium</a></li>
+                </ul>
+             </nav>
+         </div>
+     </div>
+
+     <section class="hero">
+         <div class="container">
+             <div class="left-col">
+                 <p class="subhead">It's Nitty &amp; Gritty</p>
+                 <h1>A Task App That Doesn't Stench</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="Watch-video-cta">
+                        <img src="images/watch.svg" alt="Tutorial">Tutorial
+                    </a>
+                </div>
+
+             </div>
+             <img src="images/illustration.svg" class="hero-img" alt="Illustration">
+         </div>
+     </section>
+
+     <section class="features-section">
+         <div class="container">
+         <ul>
+            <li>Clean and Minimalistic UI</li>
+            <li>Add Unlimited Task</li>
+            <li>Set Task Reminder</li>
+            <li>Share to Instagram Stories</li>
+            <li>Eye Catching Animation Upon Task Completion</li>
+            <li>Colaboration with Peers</li>
+            <li>And Many More</li>
+        </ul>
+            <img src="images/illustration2.svg" alt="Man sitting and thinking">
+         </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/user.svg" alt="Person">
+                    <blockquote>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+
+                <li>
+                    <img src="images/user.svg" alt="Person">
+                    <blockquote>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+
+                <li>
+                    <img src="images/user.svg" alt="Person">
+                    <blockquote>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</blockquote>
+                    <cite>Jane Doe</cite>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="container-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <input type="email" placeholder="Email">
+
+                    <label for="message"></label>
+                    <textarea name="messsage" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115133.01024715551!2d85.07283116751444!3d25.608020682776562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1618403359228!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="contact">
+        <img  src="images/gmail.svg"><span class="gmail">likeadityakumar@gmail.com</span>
+        <img class="chat" src="images/chat.svg"><span>+91 9572751468</span>
+        <p class="copyright">Design by Aditya</p>
+    </div>
+
+    <script>
+        const mobileBtn=document.getElementById('mobile-cta')
+        nav=document.querySelector('nav')
+        mobileBtnExit=document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click',()=>{
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click',()=>{
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+</body>
+ </html>
